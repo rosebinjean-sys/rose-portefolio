@@ -529,6 +529,29 @@ footer {
 }
 
 
+/* Conteneur principal */
+.images-marque {
+  display: flex;
+  justify-content: center; /* centre l'ensemble */
+  gap: 20px;               /* espace entre les deux images */
+  margin-top: 20px;
+  flex-wrap: wrap;         /* passe en colonne sur mobile */
+}
+
+/* Chaque bloc image */
+.image-item img {
+  width: 709px;       /* même taille que ton image de référence */
+  max-width: 100%;    /* responsive */
+  height: auto;       /* garde les proportions */
+  display: block;
+}
+
+
+
+
+
+
+
 
 .imagedemarque-container {
   text-align: center; /* centre le contenu horizontalement */
@@ -543,12 +566,12 @@ footer {
 }
 
 
-.analysecommunication-container {
+.analyse-container {
   text-align: center; /* centre le contenu horizontalement */
   margin-top: 20px;   /* espace au-dessus, à ajuster si nécessaire */
 }
 
-.analysecommunication{
+.analyse{
   width: 709px;   /* taille personnalisable de l'image */
   max-width: 100%; /* s'adapte aux petits écrans */
   height: auto;    /* conserve les proportions */
@@ -594,6 +617,12 @@ footer {
   display: inline-block;
 }
 
+.contact-img {
+  width: 1100px;       /* taille personnalisable */
+  max-width: 100%;    /* s'adapte aux petits écrans */
+  height: auto;       /* conserve les proportions */
+  display: inline-block;
+}
 
 
 
