@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rose Marie Bin-Jean | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+<header>
+  <nav>
+    <h1>Rose Marie Bin-Jean</h1>
+    <ul>
+      <li><a href="index.html#portrait">Portrait</a></li>
+      <li class="dropdown">
+  <a href="archives.html">Archives</a>
+  <ul class="dropdown-menu">
+    <li><a href="archives.html#essence">Essence & Signature de LA PERLA Magazine</a></li>
+    <li><a href="analyse.html">Analyse de Marques</a></li>
+    <li><a href="mdigital.html">Magazine digital</a></li>
+  </ul>
+  
+</li>
+      <li><a href="skills.html">Compétences</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+  <!-- HERO -->
+  <section id="hero" class="galerie">
+    <div class="hero-content">
+      <h2>Galerie personnelle</h2>
+      <p>Chroniques d'un monde en vogue — L’union subtile entre stratégie et élégance.</p>
+    </div>
+  </section>
+
+ <!-- PORTRAIT -->
+<section id="portrait">
+ 
+  <!-- Contenu centré -->
+  <div class="portrait-content">
+    <h3 class="central-title">Portrait</h3>
+    <p>
+      Charmée par l'univers de la mode et fascinée par l'influence de l'écriture journalistique,
+      j'ai toujours été attirée par ce qui raconte, ce qui inspire et ce qui reste indélébile. Mon nom est Rose Marie, j'ai 19 ans et je poursuis actuellement des études en communication et marketing. Ainsi, j'ai pour ambition de poursuivre dans le milieu du luxe et de la mode en alternance dans une école spécialisée. Ce parcours me permettrait de mettre en lien mon goût pour l'esthétique et la création à mon intérêt pour la stratégie. L'univers du journalisme et de la mode est un langage, un regard sur le monde que je veux comprendre, explorer et incarner. À travers ce parcours, j'aspire non seulement à la création et à la transmission avec l'amour du style mais surtout, à devenir actrice d'un monde plus authentique, indomptable et tolérant.
+    </p>
+  </div>
+</section>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Rose Marie Bin-Jean — Tous droits réservés</p>
+  </footer>
+
+  <!-- SCRIPT CARROUSEL -->
+  <script>
+    const carousel = document.querySelector('.carousel');
+    const images = document.querySelectorAll('.carousel-img');
+    const nextBtn = document.querySelector('.next');
+    const prevBtn = document.querySelector('.prev');
+
+    let index = 0;
+
+    function updateCarousel() {
+      const width = images[0].clientWidth;
+      carousel.style.transform = `translateX(${-index * width}px)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+      index = (index + 1) % images.length;
+      updateCarousel();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      index = (index - 1 + images.length) % images.length;
+      updateCarousel();
+    });
+
+    window.addEventListener('resize', updateCarousel);
+  </script>
+
+ 
+

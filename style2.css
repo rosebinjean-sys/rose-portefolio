@@ -1,0 +1,600 @@
+/* ----------------- BASE ----------------- */
+body.magazine-digital {
+    font-family: 'Raleway', sans-serif;
+    color: #222;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+/* ----------------- HEADER ----------------- */
+.article-header {
+    padding: 20px 40px;
+    border-bottom: 1px solid #eee;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; /* bouton à gauche, titre centré */
+    align-items: center;
+}
+
+.back-btn {
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.article-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-align: center;
+    flex: 1; /* prend tout l’espace restant pour rester centré */
+}
+
+/* ----------------- TITRES MAGAZINE ----------------- */
+.title-container {
+    display: flex;
+    flex-direction: column; /* empile titre et sous-titre verticalement */
+    margin: 50px 40px 30px 40px;
+}
+
+.side-title {
+    font-family: 'Didot', 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 5rem;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #ffa3c6;
+    margin-bottom: 10px;
+}
+
+.side-subtitle {
+    font-family: 'Didot', 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 300;
+    max-width: 800px;
+    line-height: 1.4;
+    color: #000000;
+}
+
+.right-accent {
+    text-align: right;
+    font-weight: 600; /* gras */
+    font-size: 1.3rem;
+    max-width: 90%;
+    margin: 0 40px 10px auto; /* pousse vers la droite */
+}
+
+
+/* ----------------- IMAGE FLOTTANTE ----------------- */
+.healthyfood-img {
+    float: right;
+    width: 450px;
+    margin: 0 0 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.periodes {
+    float: left;
+    width: 350px; /* change ici pour diminuer */
+    margin: 0 20px 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+
+
+/* ----------------- TEXTE ----------------- */
+.article-text {
+    padding: 0 40px 40px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+.article-text p:first-letter {
+    font-family: 'Playfair Display', serif; /* élégante, style Vogue */
+    font-size: 15rem;        /* taille de la lettrine */
+    float: left;              /* fait descendre la lettre dans le texte */
+    line-height: 0.8;
+    padding-right: 10px;      /* espace entre la lettre et le texte */
+    font-weight: 600;
+    color: #000;              /* tu peux changer si tu veux */
+}
+
+
+/* ----------------- FOOTER ----------------- */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* ----------------- RESPONSIVE ----------------- */
+@media screen and (max-width: 768px) {
+    .title-container {
+        align-items: flex-start;
+    }
+
+    .side-title {
+        font-size: 2rem;
+    }
+
+    .side-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .bis-img {
+        float: none;
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    .article-title {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ----------------- BODY ----------------- */
+body.magazine-digital {
+    font-family: 'Raleway', sans-serif;
+    color: #222;
+    line-height: 1.7;
+    margin: 0;
+    background-color: #fff;
+}
+
+/* ----------------- HEADER ----------------- */
+.article-header {
+    padding: 20px 40px;
+    border-bottom: 1px solid #eee;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; /* bouton à gauche, titre centré */
+    align-items: center;
+}
+
+.back-btn {
+    font-weight: 300;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #222;
+}
+
+.article-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-align: center;
+    flex: 1; /* reste centré */
+}
+
+/* ----------------- TITRES ARTICLE ----------------- */
+.title-container {
+    display: flex;
+    flex-direction: column; /* empile titre et sous-titre */
+    margin: 50px 40px 30px 40px;
+}
+
+.side-title {
+    font-family: 'Didot', 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 1.1;
+    color: #ffbcde;
+    margin-bottom: 10px;
+}
+
+.side-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    max-width: 800px;
+    line-height: 1.4;
+    color: #555;
+}
+
+.right-accent {
+    text-align: right;
+    font-weight: 600;
+    font-size: 1.3rem;
+    max-width: 90%;
+    margin: 0 40px 10px auto;
+}
+
+/* ----------------- IMAGE FLOTTANTE ----------------- */
+.runway2, .periodes, .image-float {
+    float: right;
+    width: 300px; /* taille par défaut */
+    margin: 0 0 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.left-float {
+    float: left;
+    width: 400px; /* ajuste selon la taille désirée */
+    margin: 0 40px 40px 0; /* espace à droite du texte */
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.right-float {
+    float: right;          /* l'image flotte à droite */
+    width: 250px;          /* taille de l'image, ajustable */
+    margin: 0 0 20px 20px; /* espace à gauche et en dessous */
+    border-radius: 5px;    
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.left-float {
+    float: left;
+    width: 400px; /* ajuste selon la taille désirée */
+    margin: 0 40px 40px 0; /* espace à droite du texte */
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.right-float {
+    float: right;          /* l'image flotte à droite */
+    width: 350px;          /* taille de l'image, ajustable */
+    margin: 0 0 20px 20px; /* espace à gauche et en dessous */
+    border-radius: 5px;    
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.center-image {
+    text-align: center;  /* centre le contenu du div */
+    margin: 30px 0;      /* espace au-dessus et en dessous */
+}
+
+.center-image img {
+    max-width: 100%;     /* l'image ne dépassera pas la largeur du conteneur */
+    height: auto;        /* conserve les proportions */
+    border-radius: 5px;  /* optionnel : coins arrondis */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* optionnel : ombre */
+}
+
+.left-float {
+    float: left;
+    width: 400px; /* ajuste selon la taille désirée */
+    margin: 0 40px 40px 0; /* espace à droite du texte */
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.right-float {
+    float: right;          /* l'image flotte à droite */
+    width: 300px;          /* taille de l'image, ajustable */
+    margin: 0 0 20px 20px; /* espace à gauche et en dessous */
+    border-radius: 5px;    
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* ----------------- TEXTE ARTICLE ----------------- */
+.article-text {
+    padding: 0 40px 40px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+/* ----------------- LETTRINES ----------------- */
+.article-text p.dropcap:first-letter {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    float: left;
+    line-height: 0.8;
+    padding-right: 10px;
+    font-weight: 600;
+    color: #000;
+}
+
+/* ----------------- FOOTER ----------------- */
+footer {
+    text-align: center;
+    padding: 40px 0;       /* réduit le padding interne */
+    margin-top: 60px;      /* décale tout le footer vers le bas */
+    border-top: 1px solid #eee;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* ----------------- RESPONSIVE ----------------- */
+@media screen and (max-width: 768px) {
+    .title-container {
+        align-items: flex-start;
+    }
+
+    .side-title {
+        font-size: 2rem;
+    }
+
+    .side-subtitle, .right-accent {
+        font-size: 1.2rem;
+        text-align: left;
+        margin: 10px 0;
+    }
+
+    .healthyfood-img, .runway2, .periodes, .image-float, .left-float {
+        float: none;
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    .article-title {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+.storypub-img {
+  display: block;
+  margin: 40px auto;  /* centre horizontalement + espace vertical */
+  max-width: 100%;    /* responsive */
+  width: 900px;       /* taille souhaitée, modifiable */
+  height: auto;
+}
+
+
+
+/* Conteneur texte principal */
+.article-text {
+  font-family: "Playfair Display", serif;
+  max-width: 1400px;       /* largeur confortable pour lecture */
+  margin: 40px auto;       /* centré sur la page */
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;        /* espacement agréable pour lecture */
+  text-align: justify;     /* alignement type magazine */
+}
+
+/* Image flottante à droite */
+.misfitscover {
+  float: right;
+  width: 400px;            /* ajuste selon ton visuel */
+  max-width: 40%;           /* ne dépasse pas 40% du conteneur */
+  height: auto;
+  margin: 0 0 20px 20px;   /* espace autour pour le texte */
+  border-radius: 10px;
+}
+
+/* Image flottante à gauche */
+.bella {
+  float: left;
+  width: 350px;
+  max-width: 40%;
+  height: auto;
+  margin: 0 20px 20px 0;
+  border-radius: 10px;
+}
+
+/* Pour que le conteneur englobe correctement les flottants */
+.article-text::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Drop*
+
+
+/* Drop cap / lettrine */
+.dropcap:first-letter {
+  float: left;
+  font-size: 15rem;
+  line-height: 0.8;
+  margin-right: 15px;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  color: #000;
+}
+
+
+.side-title {
+  font-family: "Playfair Display", serif;  /* élégant et magazine */
+  font-size: 4rem;                         /* augmente la taille ici */
+  font-weight: 600;                        /* gras */
+  text-transform: uppercase;               /* majuscules */
+  letter-spacing: 2px;                     /* espacement entre lettres */
+  margin: 20px 0;                          /* marge au-dessus et en dessous */
+  color: #000;                             /* couleur du titre */
+}
+
+
+.side-subtitle {
+  font-family: "Playfair Display", sans-serif;  /* police élégante pour le sous-titre */
+  font-size: 1.8rem;                   /* taille du texte */
+  font-weight: 300;                     /* poids normal ou 500 si tu veux un peu plus gras */
+  color: #000000;                       /* ici tu mets la couleur souhaitée, exemple marron */
+  margin: 10px 0;                        /* marge au-dessus et en dessous */
+}
+
+
+.gros-titre-axe {
+  font-size: 4rem;        /* plus gros */
+  font-weight: 700;
+  text-align: left;       /* aligné à gauche */
+  margin-top: 50px;       /* descend le titre par rapport à l'image */
+  margin-left: 40px;      /* l’éloigne du bord gauche */
+  color: #222;
+  font-family: 'Playfair Display', serif;
+}
+
+.titre-image-container {
+  display: flex;
+  justify-content: space-between; /* titre à gauche, image à droite */
+  align-items: flex-start;        /* alignement en haut */
+  margin-top: 50px;               /* espace au-dessus du conteneur */
+  gap: 40px;                      /* espace entre texte et image */
+}
+
+.texte-gauche {
+  max-width: 300px; /* texte compacté à gauche */
+  line-height: 1.4; /* lignes un peu plus serrées */
+}
+
+.titre-gros {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 4rem;
+  margin: 0;                      /* pas de marge inutile */
+}
+
+.img-droite {
+  max-width: 500px;                /* ajuste selon ton besoin */
+  height: auto;
+}
+
+.titre-image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* au lieu de center */
+}
+
+
+.titre-gros {
+  margin: 0; /* pas de décalage vers le bas */
+  text-align: left;
+}
+
+.text-below {
+  margin-top: 1px; /* ajuste comme tu veux */
+  padding: 0;        /* pour annuler tout padding parasite */
+  margin-left: 0;    /* pour annuler tout décalage */
+  text-align: left;
+  margin-top: -65px; /* ou même -5px si tu veux remonter encore */
+}
+
+
+
+.img-droite {
+  width: 800px;   /* mets la taille que tu veux : 300px, 400px, 500px… */
+  height: auto;   /* garde les proportions */
+}
+
+
+
+.timelineelle-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  margin-top: 20px;        /* Espace au-dessus, ajuste si besoin */
+}
+
+.timelineelle-img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.bloc-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  margin-top: 250px;        /* Espace au-dessus, ajuste si besoin */
+}
+
+.bloc-img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.imagedemarque-container {
+  text-align: center; /* centre le contenu horizontalement */
+  margin-top: 20px;   /* espace au-dessus, à ajuster si nécessaire */
+}
+
+.imagedemarque {
+  width: 709px;   /* taille personnalisable de l'image */
+  max-width: 100%; /* s'adapte aux petits écrans */
+  height: auto;    /* conserve les proportions */
+  display: inline-block; /* assure que l'image est traitée comme un bloc centré */
+}
+
+
+.analysecommunication-container {
+  text-align: center; /* centre le contenu horizontalement */
+  margin-top: 20px;   /* espace au-dessus, à ajuster si nécessaire */
+}
+
+.analysecommunication{
+  width: 709px;   /* taille personnalisable de l'image */
+  max-width: 100%; /* s'adapte aux petits écrans */
+  height: auto;    /* conserve les proportions */
+  display: inline-block; /* assure que l'image est traitée comme un bloc centré */
+}
+
+
+.strateg-container {
+  text-align: center; /* centre l'image horizontalement */
+  margin-top: 20px;   /* espace au-dessus, ajuste si nécessaire */
+}
+
+.strateg-img {
+  width: 1500px;       /* taille personnalisable */
+  max-width: 100%;    /* s'adapte aux petits écrans */
+  height: auto;       /* conserve les proportions */
+  display: inline-block;
+}
+
+
+
+.swot-container {
+  text-align: center; /* centre l'image horizontalement */
+  margin-top: 200px;  /* espace au-dessus, à ajuster si nécessaire */
+}
+
+.swot-img {
+  width: 1200px;       /* taille personnalisable */
+  max-width: 100%;    /* s'adapte aux petits écrans */
+  height: auto;       /* conserve les proportions */
+  display: inline-block;
+}
+
+.recommandation-container {
+  text-align: center; /* centre l'image horizontalement */
+  margin-top: 200px;  /* espace au-dessus */
+}
+
+.recommandation-img {
+  width: 1100px;       /* taille personnalisable */
+  max-width: 100%;    /* s'adapte aux petits écrans */
+  height: auto;       /* conserve les proportions */
+  display: inline-block;
+}
+
+
+
+
+

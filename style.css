@@ -1,0 +1,2313 @@
+
+:root {
+  --rose-poudre: #eac7c7;
+  --blanc-casse: #f9f6f2;
+  --noir: #1c1b1b;
+}
+
+
+
+/* Navigation */
+header {
+  background-color: var(--blanc-cassé );
+  padding: 20px 0;
+  border-bottom: 1px solid var(--noir);
+
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+}
+
+nav h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--noir);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+
+
+.hero-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.hero-content p {
+  font-size: 1,2rem;
+  font-style: italic;
+}
+
+/* Sections */
+section {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+section h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  margin-bottom: -15px;
+  color: var(--noir);
+  position: relative
+ 
+
+
+
+}
+
+
+/* Footer */
+footer {
+  background-color: var(--rose-poudre);
+  text-align: center;
+  padding: 10px 0;
+  color: var(--noir);
+  font-size: 1rem;
+  width: 80%;
+  margin: 0 auto;
+} 
+
+.archives-intro {
+  background-color: #f8e1e7;      /* 🌸 rose poudré */
+  color: #000000;                 /* texte noir */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: center;
+  font-family: 'font-family: ' 'Playfair Display'
+
+}
+#portrait {
+  position: relative;
+  padding: 6rem 2rem;
+  margin-top: 13rem;
+  text-align: center;
+  color: #222;
+  overflow: hidden;
+}
+
+
+
+
+
+/* Conteneur général : prend tout l’écran et centre */
+.a-la-une {
+  height: 100vh;                    /* Prend toute la hauteur de la fenêtre */
+  display: flex;
+  align-items: center;             /* Centre verticalement */
+  justify-content: center;         /* Centre horizontalement */
+  background-color: transparent;   /* Garde ton fond image intact */
+}
+
+/* Contenu interne centré */
+.a-la-une-content {
+  text-align: center;
+}
+
+/* Titre "N°1" stylé */
+.titre-une {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #222;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 30px;
+}
+
+/* Carrousel bien centré et ajusté */
+.carousel {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+.archives {
+  text-align: center;      /* centre le contenu textuel */
+  margin: 2rem 0;          /* espace vertical */
+}
+
+.archives img {
+  display: block;          /* transforme l’image en bloc */
+  margin: 0 auto;          /* la centre horizontalement */
+  max-width: none;         /* conserve la taille d’origine */
+  height: auto;            /* garde les proportions */
+}
+
+.carousel {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.slides {
+  position: relative;
+  height: auto;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.slide img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.arrow.left {
+  left: 20px;
+}
+
+.arrow.right {
+  right: 20px;
+}
+
+
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow.left {
+  left: -40px; /* distance à gauche en dehors du bloc */
+}
+
+.arrow.right {
+  right: -40px; /* distance à droite en dehors du bloc */
+}
+
+.a-la-une-section {
+  text-align: center; /* Centre les éléments en ligne comme les titres et blocs */
+}
+
+/* Styles par défaut (pour les écrans larges) */
+.container {
+  width: 90%; /* au lieu de width: 800px */
+}
+
+
+
+/* Styles pour les écrans plus petits */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+:root {
+  --rose-poudre: #eac7c7;
+  --blanc-casse: #f9f6f2;
+  --noir: #1c1b1b;
+}
+
+ 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: #fdecec;  /* 🌸 rose très clair type ruban */
+}
+
+
+
+
+/* Navigation */
+header {
+  background-color: var(-- --blanc-cassé );
+  padding: 20px 0;
+ 
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+}
+
+nav h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--noir);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--rose-poudre);
+}
+
+/* Hero */
+#hero {
+  height: 30vh; /* moitié moins haut */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: var(--noir);
+  text-align: center;
+  
+
+}
+
+.hero-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.hero-content p {
+  font-size: 1,2rem;
+  font-style: italic;
+
+
+}
+
+/* Sections */
+section {
+  width: 80%;
+  margin: 80px auto;
+  text-align: center;
+}
+
+section h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: var(--noir);
+  position: relative
+
+
+}
+
+
+/* Footer */
+footer {
+  background-color: var(--rose-poudre);
+  text-align: center;
+  padding: 10px 0;
+  color: var(--noir);
+  font-size: 1rem;
+  width: 100%;
+  margin: 0 auto;
+} 
+
+.archives-intro {
+  background-color: #f8e1e7;      /* 🌸 rose poudré */
+  color: #000000;                 /* texte noir */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: center;
+  font-family: 'font-family: ' 'Playfair Display'
+
+}
+/* SECTION AVEC IMAGE DE FOND */
+#portrait {
+  padding: 6rem 2rem;
+  color: #222; /* texte noir ou gris foncé */
+  text-align:  center;       /* CENTRAGE HORIZONTAL DU TEXTE */
+  position: relative;
+}
+
+
+.portrait-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 2rem;
+}
+
+.archive-photo {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+}
+
+.archive-item {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.archives-container {
+  display: flex;
+  gap: 20px;            /* espace entre les images */
+  justify-content: center; /* centre le groupe d'images */
+  flex-wrap: wrap;       /* passe à la ligne si l'écran est trop petit */
+  margin-top: 2rem;
+}
+
+.archive-item {
+  text-align: center;    /* texte centré sous chaque image */
+  max-width: 300px;      /* limite la taille pour uniformiser les images */
+}
+
+.archive-photo {
+  width: 100%;           /* prend toute la largeur du container .archive-item */
+  border-radius: 10px;
+  display: block;
+}
+
+.archives-container {
+  display: flex;
+  gap: 20px;              /* espace entre les images */
+  justify-content: center; /* centre le groupe d'images */
+  flex-wrap: wrap;         /* passe à la ligne si écran trop petit */
+  margin-top: 2rem;
+}
+
+.archive-item {
+  text-align: center;      /* centré pour chaque image si besoin */
+  max-width: 300px;        /* uniformise la taille */
+}
+
+.archive-photo {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.archives-text {
+  text-align: center;      /* texte centré sous toutes les images */
+  margin-top: 20px;        /* espace entre les images et le texte */
+  max-width: 800px;        /* largeur maximale pour ne pas être trop large */
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Agrandir uniquement les images du conteneur du bas */
+.archives-bottom .archive-item {
+  max-width: 500px;   /* largeur max par item (ajuste ici si besoin) */
+}
+
+.archives-bottom .archive-photo {
+  width: 100%;
+  max-width: 420px;   /* applique la même largeur à l'image */
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Si tu veux vraiment forcer (en dernier recours) : */
+/*
+.archives-bottom .archive-photo {
+  max-width: 420px !important;
+}
+*/
+
+.archives-bottom img[alt="Logo LA PERLA"] {
+  mix-blend-mode: multiply;
+  background: transparent;
+}
+
+.archives-bottom img[alt="Palette couleurs"] {
+  mix-blend-mode: multiply;  /* mélange les couleurs avec le fond */
+  background: transparent;   /* fond transparent */
+}
+
+
+
+
+.archive-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.top-photo {
+  width: 700px;   /* même taille que les deux du dessus */
+  max-width: 100%;
+}
+
+.central-title {
+  font-family: 'Didot', 'Playfair Display', serif; /* Didot si dispo, sinon Playfair */
+  font-weight: normal;
+  font-size: 2.5rem;       /* taille élégante pour les titres du milieu */
+  margin-bottom: 30px;
+  color: var(--noir);
+  letter-spacing: 1px;     /* léger espacement pour l’élégance */
+}
+
+/* Moodboard aligné à gauche + texte centré à droite */
+.moodboard-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* centre verticalement avec l’image */
+  justify-content: center; /* optionnel : centre l’ensemble */
+  gap: 40px;               /* espace entre image et texte */
+  margin-top: 3rem;
+}
+
+.moodboard-img {
+  max-width: none;         /* conserve la taille originale */
+  height: auto;
+  display: block;
+}
+
+.moodboard-text {
+  max-width: 500px;        /* largeur agréable pour lecture */
+  text-align: center;      /* centre le texte */
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* 1) Permettre au conteneur d'être plus large que la limite par défaut */
+.archive-item.announcement-wrap {
+  max-width: none;      /* supprime la limite de 300px/500px */
+  width: 100%;          /* occupe tout l'espace horizontal possible */
+  display: block;
+}
+
+/* 2) Agrandir spécifiquement l'image announcement */
+.announcement-big {
+  display: block;
+  width: 100%;                     /* remplira la largeur du parent */
+  max-width: 600px;               /* taille maximale souhaitée */
+  height: auto;
+  margin: 20px auto;
+  object-fit: contain;             /* conserve les proportions */
+}
+
+/* 3) Si une règle globale empêche encore l'agrandissement, forcer avec !important */
+.archive-item.announcement-wrap .announcement-big {
+  max-width: 600px !important;
+  width: 100% !important;
+}
+
+/* --- CARROUSEL --- */
+.carousel-container {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  margin: 40px 0;
+  overflow: hidden;       /* masque le reste des images */
+  border-radius: 10px;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 10px;
+  transition: transform 0.4s ease;
+}
+
+.carousel-img {
+  width: 100%;
+  flex-shrink: 0;  /* empêche l’image de rétrécir */
+  border-radius: 10px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.2);
+  color: white;
+  border: none;
+  font-size: 28px;
+  padding: 6px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background: rgba(0,0,0,0.4);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.section-title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 40px 0; /* espace vertical avant et après */
+}
+
+.section-title span {
+  font-family: 'Playfair Display', serif; /* même police que Portrait/Archives */
+  font-weight: 400;
+  font-size: 1.8rem; /* légèrement plus petit que les titres principaux */
+  color: var(--noir);
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+}
+
+/* les lignes de chaque côté */
+.section-title::before,
+.section-title::after {
+  content: '';
+  flex: 1;
+  height: 1px; /* épaisseur de la ligne */
+  background-color: var(--noir);
+}
+
+
+.archives-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.archive-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.archive-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.palette-section {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap; /* pour mobile */
+  align-items: flex-start;
+}
+
+/* Conteneur vertical pour palette + logo */
+.palette-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* logo toujours en bas */
+  flex-shrink: 0;
+}
+
+/* Palette de couleurs */
+.palette-img {
+  width: 525px;
+  max-width: 100%;
+}
+
+.palette-text {
+  display: flex;
+  flex-direction: column; /* empile logo puis texte verticalement */
+  align-items: flex-start; /* aligne logo + texte à gauche du bloc */
+  margin-left: 200px;      /* déplace le bloc entier vers la droite */
+  gap: 20px;               /* espace entre logo et texte */
+}
+
+.palette-logo {
+  width: 565px;      /* taille du logo */
+  max-width: 100%;   /* responsive */
+  display: block;    /* assure le comportement bloc */
+}
+
+.archives-text {
+  max-width: 600px;  /* limite la largeur du texte si nécessaire */
+  line-height: 1.5;  
+}
+
+
+.carousel {
+  display: flex;
+  transition: transform 0.4s ease;
+  width: 100%;
+}
+
+.carousel-img {
+  width: 100%; /* chaque image prend 100% du conteneur */
+  flex-shrink: 0; /* empêche les images de rétrécir */
+}
+
+.double-carousel-container {
+  display: flex;                 
+  justify-content: center;        /* centre les carrousels */
+  gap: 40px;                      /* espace entre eux */
+  flex-wrap: wrap;               
+  margin: 40px auto;
+  max-width: 1300px;             
+}
+
+.double-carousel-container .carousel-container {
+  flex: 1 1 48%;                 
+  max-width: 600px;              
+}
+.double-carousel-container .carousel-container:first-child {
+  transform: translateX(-20px); /* décale le premier carrousel de 20px vers la gauche */
+}
+
+.archives-intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 300px; /* espace entre le texte principal et le bloc palette+logo */
+  margin-top: 40px;
+}
+
+.palette-wrapper {
+  display: flex;
+  align-items: flex-start; /* aligne la palette et le bloc texte/logo en haut */
+  gap: 40px; /* espace horizontal entre la palette et le bloc texte/logo */
+}
+
+.palette-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* espace entre le logo et son texte */
+}
+
+.palette-logo {
+  margin: 0; /* pas de décalage */
+  max-width: 100%; /* reste responsive */
+}
+
+.subtitle-line {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 40px 0; /* espace vertical autour */
+}
+
+.subtitle-line span {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 2rem;   /* taille du texte, ajuste si besoin */
+  color: var(--noir);
+  text-align: center;
+  padding: 0 20px;   /* espace entre le texte et les lignes */
+  white-space: nowrap; /* empêche le texte de passer à la ligne */
+}
+
+.subtitle-line::before,
+.subtitle-line::after {
+  content: "";
+  flex: 1;                 /* prend tout l’espace disponible */
+  height: 1px;             /* épaisseur de la ligne */
+  background-color: var(--noir);
+}
+
+.subtitle-line {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 100px 0 60px 0; /* augmente le margin-top pour descendre le titre */
+}
+
+.subtitle-line span {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 3rem;
+  color: var(--noir);
+  text-align: center;
+  padding: 0 50px;
+  white-space: nowrap;
+}
+
+.subtitle-line::before,
+.subtitle-line::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--noir);
+}
+
+.archives-text {
+  margin-top: 50px; /* descend le texte en dessous du titre */
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Conteneur de dropdown */
+nav ul li.dropdown {
+  position: relative; /* nécessaire pour positionner le sous-menu */
+}
+
+/* Sous-menu caché par défaut */
+nav ul li.dropdown .dropdown-menu {
+  display: none;          /* caché par défaut */
+  position: absolute;     /* position absolue par rapport au parent */
+  top: 100%;              /* juste en dessous du lien "Archives" */
+  left: 0;
+  background-color: var(--blanc-casse); /* couleur de fond du menu */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* ombre légère */
+  min-width: 250px;        /* largeur minimum du menu */
+  z-index: 100;            /* au-dessus des autres éléments */
+}
+
+/* Style des liens du sous-menu */
+nav ul li.dropdown .dropdown-menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: var(--noir);
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+/* Effet au survol du lien */
+nav ul li.dropdown .dropdown-menu li a:hover {
+  background-color: var(--rose-poudre);
+}
+
+/* Afficher le sous-menu uniquement au survol de "Archives" */
+nav ul li.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+
+/* Parent du menu déroulant */
+nav ul li.dropdown {
+  position: relative;
+}
+
+/* Sous-menu invisible par défaut */
+nav ul li.dropdown ul.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;        /* juste en dessous du lien parent */
+  left: 0;
+  background-color: var(--blanc-casse);
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  border: 1px solid var(--noir);
+  min-width: 250px; /* largeur minimale */
+  z-index: 100;
+}
+
+/* Chaque sous-lien vertical */
+nav ul li.dropdown ul.dropdown-menu li {
+  padding: 8px 20px;
+}
+
+nav ul li.dropdown ul.dropdown-menu li a {
+  color: var(--noir);
+  text-decoration: none;
+  display: block;
+}
+
+/* Changement de couleur au survol */
+nav ul li.dropdown ul.dropdown-menu li a:hover {
+  color: var(--rose-poudre);
+}
+
+/* Afficher le sous-menu au survol */
+nav ul li.dropdown:hover ul.dropdown-menu {
+  display: block;
+}
+
+
+.subtitle-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;  /* même police que le titre essence */
+  font-size: 3rem;                         /* même taille que le titre essence */
+  font-weight: normal;                      /* même poids */
+  color: var(--noir);
+  letter-spacing: 1px;
+  margin: 50px 0;                           /* espace au-dessus et en dessous */
+}
+
+.subtitle-line::before,
+.subtitle-line::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: var(--noir);
+  margin: 0 20px;  /* espace entre ligne et texte */
+}
+
+
+/* Bloc image + texte */
+.brand-study {
+  display: flex;
+  gap: 40px;              /* espace entre image et texte */
+  width: 90%;
+  max-width: 1200px;
+  margin: 80px 0 80px 0;  /* supprime le margin-left auto pour coller à gauche */
+  justify-content: flex-start;
+  align-items: flex-start; /* image part du haut du conteneur */
+}
+
+/* Image collée à gauche */
+.brand-study {
+  display: flex;
+  gap: 40px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 80px auto;
+  justify-content: flex-start;
+  align-items: stretch; /* <-- prend toute la hauteur du conteneur */
+}
+
+.brand-img {
+  width: 55%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.brand-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* texte en haut, titre en bas */
+}
+
+.brand-top-text {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.brand-title {
+  font-family: "Playfair Display", serif;
+  font-size: 64px; /* augmente la taille ici */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  line-height: 1.05;
+}
+
+
+/* Image timeline en bas, indépendante */
+.brand-bottom-img {
+  width: 80%;          /* ajuste la largeur */
+  max-width: 1500px;   /* limite maximale */
+  height: auto;         /* garde les proportions */
+  display: block;
+  margin: 80px auto 0;  /* espace au-dessus et centré */
+  border-radius: 10px;  /* optionnel : coins arrondis */
+}
+
+
+/* Conteneur pour deux images côte à côte */
+.image-row {
+  display: flex;               
+  gap: 20px;                   /* espace entre les images */
+  margin-top: 50px;            
+  justify-content: flex-start; /* ou center si tu veux centrer */
+  flex-wrap: nowrap;           /* empêche les images de passer en dessous */
+}
+
+/* Chaque image dans le conteneur */
+.image-small {
+  width: 725px !important;     /* largeur fixe */
+  max-width: none !important;  /* supprime toute limite précédente */
+  height: auto !important;     /* conserve les proportions */
+  display: block !important;
+}
+
+
+
+/* Conteneur pour la nouvelle image seule */
+.image-below {
+  margin-top: 40px;      /* espace entre les deux blocs */
+  text-align: center;    /* centre horizontalement l'image */
+}
+
+/* Nouvelle image */
+.image-single {
+  width: 1200px;          /* largeur souhaitée */
+  max-width: 100%;       /* responsive sur mobile */
+  height: auto;          
+  display: inline-block; /* permet le centrage */
+  border-radius: 10px;   /* optionnel : coins arrondis */
+}
+
+/* Nouveau titre centré sous l'image */
+.subtitle-center {
+  font-family: 'Playfair Display', serif; /* même police que Analyses de Marques */
+  font-weight: 600;                        /* gras comme le titre */
+  font-size: 2rem;                         /* taille importante */
+  text-align: center;                       /* centré */
+  margin-top: 200px;                         /* espace au-dessus */
+  margin-bottom: 50px;                      /* espace en dessous */
+  color: var(--noir);                       /* même couleur que les titres */
+  letter-spacing: 1px;                      /* léger espacement pour l'élégance */
+}
+
+
+/* Zone de texte sous le titre */
+.text-below {
+  max-width: 800px;         /* limite la largeur pour lecture confortable */
+  margin: 0 auto 50px auto; /* centre horizontalement et espace en dessous */
+  text-align: center;        /* texte centré */
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--noir);
+}
+
+.image-below-synthese {
+  text-align: center;   /* centre horizontalement l'image */
+  margin-top: 40px;     /* espace au-dessus */
+}
+
+.image-below-synthese .image-synthese {
+  width: 1200px;         /* ajuste la largeur selon ton besoin */
+  max-width: 100%;      /* responsive sur mobile */
+  height: auto;
+  display: inline-block; /* permet le centrage */
+  border-radius: 10px;   /* optionnel : coins arrondis */
+}
+
+.archives-text {
+  margin-bottom: 200px; /* Ajuste la valeur comme tu veux */
+}
+
+/* Images centrées (vision et missions) */
+.center-img {
+  display: block;        /* obligatoire pour centrer */
+  margin: 40px auto 40px auto; /* marge verticale + centrage horizontal */
+  max-width: 100%;       /* s’adapte à la largeur du conteneur */
+  height: auto;          /* conserve les proportions */
+}
+
+
+
+/* Footer */
+footer {
+  margin-top: 50px;   
+  padding: 20px;      
+  text-align: center;
+  background-color: #f5f5f5;
+  clear: both;          /* s’assure que le footer ne chevauche pas les images flottantes */
+}
+
+
+
+.side-img {
+  width: 1500px;  /* ajuste la valeur selon ce que tu veux */
+  height: auto;  /* conserve les proportions */
+}
+
+.left-images {
+  display: flex;          /* aligne les enfants sur une ligne */
+  align-items: flex-start; 
+  gap: 70px;              /* espace entre le logo et l'autre image */
+  margin-top: 200px;       /* ajoute de l'espace au-dessus du conteneur */
+}
+
+.center-img {
+  display: block;       /* nécessaire pour centrer */
+  margin: 60px auto;    /* marge verticale + centrage horizontal */
+  max-width: 100%;      /* s’adapte au conteneur */
+  height: auto;         /* conserve les proportions */
+}
+
+
+
+
+
+
+
+
+
+/* ==================== RESET ==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #222;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ==================== HEADER / NAV ==================== */
+header {
+  width: 100%;
+  padding: 20px 40px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #eee;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #222;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.6;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 25px;
+  background: white;
+  padding: 10px 0;
+  list-style: none;
+  min-width: 220px;
+  border: 1px solid #eee;
+}
+
+.dropdown-menu li a {
+  padding: 10px 20px;
+  display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* -------------------- HEADER MAGAZINE -------------------- */
+.header-magazine {
+  position: relative;
+  display: flex;
+  justify-content: center;   /* centre le titre */
+  align-items: center;       /* alignement vertical */
+  padding: 20px 0;
+  margin: 0;
+}
+
+/* -------------------- CATÉGORIES COMPLETEMENT À GAUCHE -------------------- */
+.categories-left {
+  position: absolute;
+  top: 50%;                  /* verticalement centré */
+  left: 0;                    /* bord extrême gauche */
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cartes catégories */
+.categories-left .cat-card {
+  padding: 6px 12px;
+  border: 1px solid black;
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.categories-left .cat-card:hover {
+  background: black;
+  color: white;
+}
+
+/* -------------------- TITRE CENTRÉ -------------------- */
+.title-center h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  color: #000;
+}
+
+
+/* ==================== HERO ==================== */
+.hero-magazine {
+  position: relative;
+  width: 100%;
+}
+
+.hero-magazine img {
+  width: 100%;
+  height: 75vh;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  color: black;           /* texte en noir */
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn-hero {
+  display: inline-block;
+  padding: 10px 22px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-hero:hover {
+  background-color: white;
+  color: black;
+}
+
+/* ==================== ARTICLES ==================== */
+.articles {
+  padding: 70px 7%;
+}
+
+.articles h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.card-article {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  transition: 0.3s ease;
+}
+
+.card-article img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card-article h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.card-article .excerpt {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  transition: 0.3s;
+}
+
+.read-more:hover {
+  opacity: 0.6;
+}
+
+.card-article:hover {
+  transform: translateY(-6px);
+}
+
+/* ==================== FOOTER ==================== */
+footer {
+  text-align: center;
+  padding: 40px;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  header {
+    padding: 15px 20px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  .header-magazine {
+    flex-direction: column;  /* titre + catégories passent en colonne */
+    gap: 15px;
+  }
+
+  .header-magazine .main-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .header-magazine .categories-grid {
+    justify-content: center;
+  }
+}
+
+
+.featured-article {
+  max-width: 900px;       /* largeur paysage magazine digital */
+  margin: 0 auto;          /* centré horizontalement */
+  padding: 40px 20px;
+}
+
+.featured-article h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.featured-article p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.featured-article img {
+  width: 100%;   /* s’adapte à la largeur de la section */
+  height: auto;
+  margin: 20px 0;
+}
+
+
+.read-featured {
+  display: inline-block;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.read-featured:hover {
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+/* -------------------- HEADER ARTICLE -------------------- */
+.article-header {
+  position: relative;
+  width: 100%;
+}
+
+/* Ligne fine noire en haut */
+.article-header .top-line {
+  height: 2px;
+  background-color: #000;
+  width: 100%;
+}
+
+/* Contenu du header (bouton + titre) */
+.article-header .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* titre centré */
+  padding: 15px 20px;
+  position: relative;
+}
+
+/* Bouton retour à gauche */
+.article-header .back-btn {
+  position: absolute;
+  left: 20px;               /* collé à gauche avec un petit padding */
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.article-header .back-btn:hover {
+  opacity: 0.7;
+}
+
+/* Titre centré */
+.article-header .article-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  color: #000;
+}
+
+/* -------------------- CONTENU ARTICLE -------------------- */
+
+
+/* -------------------- FOND DE LA PAGE -------------------- */
+body {
+  background-color: #fff; /* fond blanc */
+  margin: 0;              /* supprime les marges par défaut du navigateur */
+  padding: 0;
+  font-family: 'Raleway', sans-serif; /* police principale */
+}
+
+.article-content {
+  max-width: 900px;
+  margin: 200px auto;
+  padding: 0 20px;
+}
+
+.article-content p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.article-content img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+  text-align: center;
+  padding: 40px;
+  border-top: 1px solid #eee;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+.article-content p::first-letter {
+  font-family: 'Playfair Display', serif; /* ou une autre police stylée type Vogue */
+  font-size: 11rem;                        /* très gros */
+  font-weight: 700;
+  float: left;                             /* la lettre est à gauche du paragraphe */
+  line-height: 1;                          /* ajuste pour aligner avec le texte */
+  margin-right: 10px;                      /* espace entre la lettre et le texte */
+  color: #000;                             /* couleur noire */
+}
+
+
+
+/* Conteneur global de l’article */
+.article-content {
+  position: relative;       /* nécessaire pour que les titres restent absolus */
+  max-width: 1200px;        /* largeur de la colonne */
+  margin: 250px auto 50px 40px;  /* haut | droite | bas | gauche */
+  padding: 0 20px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #000
+  
+}
+
+
+/* Conteneur texte */
+.article-content {
+  max-width: 1400px;
+  margin: 250px auto 50px auto; /* centré horizontalement */
+  padding: 0 20px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #000;
+  position: relative; /* utile pour titres latéraux */
+}
+
+/* Image flottante à droite pour que le texte contourne */
+.top-right-img {
+  float: right;      /* flottante à droite */
+  width: 400px;      /* largeur de l'image */
+  height: auto;
+  margin: 0 0 20px 20px; /* espace entre l'image et le texte */
+}
+
+
+
+/* Titre principal : MODE & POUVOIR */
+.side-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;   /* plus grand */
+  font-weight: 700;
+  color: #000;     /* texte noir pur */
+  opacity: 1;      /* totalement opaque */
+  margin-bottom: 30px; /* espace avant le texte */
+  text-align: left;  /* à gauche */
+}
+
+/* Sous-titre : Influence etc. */
+.side-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem; 
+  font-weight: 600;
+  color: #000;       
+  margin-bottom: 50px; /* plus d'espace avant le texte principal */
+  text-align: left;
+}
+
+/* Conteneur texte */
+.article-content {
+  max-width: 1400px;
+  margin: 50px auto;  /* centré horizontalement */
+  padding: 0 20px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #000;
+}
+
+/* règle globale pour les images normales */
+.article-content img:not(.simone-img) {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+/* règle spécifique pour Simone */
+.article-content img.simone-img {
+  float: left;          /* à gauche maintenant */
+  width: 400px;
+  height: auto;
+  margin: 0 0 20px 20px;
+}
+
+
+/* Image pleine largeur pour Audrey */
+.magazine-img {
+  display: block;      /* empêche le comportement inline */
+  width: 100%;         /* prend toute la largeur du conteneur */
+  height: auto;        /* garde les proportions */
+  margin: 40px 0;      /* espace avant et après */
+  float: none !important;  /* annule tout flottement précédent */
+}
+
+
+/* Titre principal : ENVIRONNEMENT & ENGAGEMENT*/
+.side-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;   /* plus grand */
+  font-weight: 700;
+  color: #f30079;     /* texte noir pur */
+  opacity: 1;      /* totalement opaque */
+  margin-bottom: 30px; /* espace avant le texte */
+  text-align: right;  /* à droite */
+}
+
+/* Sous-titre : Le Luxe etc. */
+.side-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem; 
+  font-weight: 600;
+  color: #000000;       
+  margin-bottom: 50px; /* plus d'espace avant le texte principal */
+  text-align: right;
+}
+
+/* règle spécifique pour Stella */
+.article-content img.stella-img {
+  float: left;          /* à gauche maintenant */
+  width: 500px;
+  height: auto;
+  margin: 0 0 20px 20px;
+}
+
+/* Titre principal : CULTURE*/
+.side-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;   /* plus grand */
+  font-weight: 700;
+  color: #f30079;     /* texte noir pur */
+  opacity: 1;      /* totalement opaque */
+  margin-bottom: 30px; /* espace avant le texte */
+  text-align: right;  /* à droite */
+}
+
+/* Sous-titre : REVIVAL etc.. */
+.side-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem; 
+  font-weight: 600;
+  color: #000000;       
+  margin-bottom: 50px; /* plus d'espace avant le texte principal */
+  text-align: right;
+}
+
+/* règle spécifique pour Selena */
+.article-content img.selena-img {
+  float: left;          /* à gauche maintenant */
+  width: 500px;
+  height: auto;
+  margin: 0 0 20px 20px;
+}
+
+/* Fond général du site : rose pâle */
+body {
+  background-color: #fdf0f3; /* rose pâle exact */
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+body.magazine-digital {
+  background-color: #ffffff !important;
+}
+
+
+
+
+
+
+
+
+
+/* --- Général --- */
+body.category-page {
+    background-color: #ffffff; /* fond blanc */
+    color: #333333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Ligne fine en haut --- */
+.top-line {
+    height: 4px;
+    background-color: #000000;
+    width: 100%;
+}
+
+/* --- Header de la catégorie --- */
+.category-header {
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+}
+
+.category-title {
+    font-family: 'Didot', serif;
+    font-size: 3rem;
+    color: #222222;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.category-description {
+    font-size: 1.1rem;
+    color: #000000;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* --- Section titre avec ligne --- */
+.section-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 1rem 2rem;
+    gap: 1rem;
+}
+
+.section-line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #000000;
+    max-width: 100px;
+}
+
+.section-title {
+    font-family: 'Didot', serif; /* police élégante style Vogue */
+    font-size: 1.8rem;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+/* --- Grille des cartes --- */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem 3rem;
+}
+
+/* --- Cartes individuelles --- */
+.cat-card {
+    display: block;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 2rem 1.5rem;
+    text-decoration: none;
+    color: #333333;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.cat-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #222222;
+}
+
+.cat-card p {
+    font-size: 1rem;
+    color: #555555;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #777777;
+    font-size: 0.9rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* --- Responsive / petites tailles --- */
+@media (max-width: 600px) {
+    .category-title {
+        font-size: 2.2rem;
+    }
+    .section-title {
+        font-size: 1.5rem;
+    }
+    .cards-container {
+        padding: 0 1rem 2rem;
+ 
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1000;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+
+/* --- Général --- */
+body.category-page {
+    background-color: #ffffff; /* fond blanc */
+    color: #333333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Ligne fine en haut --- */
+.top-line {
+    height: 4px;
+    background-color: #000000;
+    width: 100%;
+}
+
+/* --- Header de la catégorie --- */
+.category-header {
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+}
+
+.category-title {
+    font-family: 'Didot', serif;
+    font-size: 3rem;
+    color: #222222;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.category-description {
+    font-family: 'Didot', serif;
+    font-size: 1.2rem;
+    color: #000000;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+/* --- Section titre avec ligne --- */
+.section-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 1rem 2rem;
+    gap: 1rem;
+}
+
+.section-line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #000000;
+    max-width: 100px;
+}
+
+.section-title {
+    font-family: 'Didot', serif;
+    font-size: 1.8rem;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+/* --- Grille des cartes --- */
+.cards-container, .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem 3rem;
+}
+
+/* --- Cartes individuelles --- */
+.cat-card, .card-article {
+    display: block;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 2rem 1.5rem;
+    text-decoration: none;
+    color: #333333;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cat-card:hover, .card-article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.cat-card h3, .card-article h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #222222;
+    font-family: 'Didot', serif;
+}
+
+.cat-card p, .card-article p {
+    font-size: 1rem;
+    color: #555555;
+}
+
+.cat-card-img, .card-article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+/* --- Bouton retour --- */
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1000;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #777777;
+    font-size: 0.9rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* --- Responsive / petites tailles --- */
+@media (max-width: 600px) {
+    .category-title {
+        font-size: 2.2rem;
+    }
+    .section-title {
+        font-size: 1.5rem;
+    }
+    .cards-container, .articles-grid {
+        padding: 0 1rem 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* --- Général --- */
+body.category-page {
+    background-color: #ffffff; /* fond blanc */
+    color: #333333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Ligne fine en haut --- */
+.top-line {
+    height: 4px;
+    background-color: #000000;
+    width: 100%;
+}
+
+/* --- Header de la catégorie --- */
+.category-header {
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+}
+
+.category-title {
+    font-family: 'Didot', serif;
+    font-size: 3rem;
+    color: #222222;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.category-description {
+    font-family: 'Didot', serif;
+    font-size: 1.2rem;
+    color: #000000;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+/* --- Section titre avec ligne --- */
+.section-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 1rem 2rem;
+    gap: 1rem;
+}
+
+.section-line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #000000;
+    max-width: 100px;
+}
+
+.section-title {
+    font-family: 'Didot', serif;
+    font-size: 1.8rem;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+/* --- Grille des cartes --- */
+.cards-container, .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem 3rem;
+}
+
+/* --- Cartes individuelles --- */
+.cat-card, .card-article {
+    display: block;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 2rem 1.5rem;
+    text-decoration: none;
+    color: #333333;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cat-card:hover, .card-article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.cat-card h3, .card-article h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #222222;
+    font-family: 'Didot', serif;
+}
+
+.cat-card p, .card-article p {
+    font-size: 1rem;
+    color: #555555;
+}
+
+.cat-card-img, .card-article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+/* --- Bouton retour --- */
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1000;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #777777;
+    font-size: 0.9rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* --- Responsive / petites tailles --- */
+@media (max-width: 600px) {
+    .category-title {
+        font-size: 2.2rem;
+    }
+    .section-title {
+        font-size: 1.5rem;
+    }
+    .cards-container, .articles-grid {
+        padding: 0 1rem 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+/* --- Général --- */
+body.category-page {
+    background-color: #ffffff; /* fond blanc */
+    color: #333333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Ligne fine en haut --- */
+.top-line {
+    height: 4px;
+    background-color: #000000;
+    width: 100%;
+}
+
+/* --- Header de la catégorie --- */
+.category-header {
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+}
+
+.category-title {
+    font-family: 'Didot', serif;
+    font-size: 3rem;
+    color: #222222;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.category-description {
+    font-family: 'Didot', serif;
+    font-size: 1.2rem;
+    color: #000000;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+/* --- Section titre avec ligne --- */
+.section-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 1rem 2rem;
+    gap: 1rem;
+}
+
+.section-line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #000000;
+    max-width: 100px;
+}
+
+.section-title {
+    font-family: 'Didot', serif;
+    font-size: 1.8rem;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+/* --- Grille des cartes --- */
+.cards-container, .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem 3rem;
+}
+
+/* --- Cartes individuelles --- */
+.cat-card, .card-article {
+    display: block;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 2rem 1.5rem;
+    text-decoration: none;
+    color: #333333;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cat-card:hover, .card-article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.cat-card h3, .card-article h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #222222;
+    font-family: 'Didot', serif;
+}
+
+.cat-card p, .card-article p {
+    font-size: 1rem;
+    color: #555555;
+}
+
+.cat-card-img, .card-article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+/* --- Bouton retour --- */
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1000;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #777777;
+    font-size: 0.9rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* --- Responsive / petites tailles --- */
+@media (max-width: 600px) {
+    .category-title {
+        font-size: 2.2rem;
+    }
+    .section-title {
+        font-size: 1.5rem;
+    }
+    .cards-container, .articles-grid {
+        padding: 0 1rem 2rem;
+    }
+}
+
+
+
+

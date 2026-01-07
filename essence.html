@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Essence & Signature – LA PERLA Magazine</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <h1>Rose Marie Bin-Jean</h1>
+      <ul>
+        <li><a href="index.html#portrait">Portrait</a></li>
+
+        <!-- Menu Archives avec sous-catégories -->
+        <li class="dropdown">
+          <a href="archives.html">Archives</a>
+          <ul class="dropdown-menu">
+            <li><a href="essence.html">Essence & Signature de LA PERLA Magazine</a></li>
+            <li><a href="analyse.html">Analyse de Marques</a></li>
+           <li><a href="mdigital.html">Magazine digital</a></li>
+          </ul>
+        </li>
+
+        <li><a href="index.html#skills">Compétences</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SECTION PRINCIPALE -->
+  <section>
+    <h2 class="central-title">Archives</h2>
+
+    <!-- Sous-titre avec lignes -->
+    <h3 id="essence" class="subtitle-line">
+      Essence & Signature de LA PERLA Magazine
+    </h3>
+
+    <!-- Texte -->
+    <p class="archives-text">
+      Tout a commencé avec une pensée, une idée : un magazine qui n'existait pas encore, mais que je rêvais de voir naître. 
+      Un espace où la mode raconte des histoires, révèle des univers et célèbre la féminité telle qu'elle est: libre, 
+      assumée, sensible et puissante. C'est ainsi qu'est né LA PERLA Magazine. Mon univers puise son inspiration dans les années 
+      1990, avec leurs contrastes de noir et blanc, dans l'élégance de Dior, la praticité raffinée de Chanel, l'audace 
+      d'Isabel Marant et le glamour de Maje. Le cinéma avec ses récits visuels et sa capacité à capturer des émotions, 
+      a également était une source d'inspiration majeure pour la création de ce projet. Chaque page, chaque photo, chaque mise en scène cherche à transporter 
+      le lecteur dans un univers unique. Les valeurs qui fondent ce projet sont au cœur de ma démarche, dés plus sincère 
+      qu'elle soit: la liberté de créer sans contraintes, l'audace d'explorer, le style comme expression de soi, la tolérance 
+      et l'indomptabilité. LA PERLA Magazine s'adresse aux jeunes adultes et passionnés de mode, en quête d'une expérience 
+      immersive, qui dépasse les tendances et célèbre la créativité et la personnalité.
+    </p>
+  </section>
+
+  <!-- ARCHIVES -->
+ 
+<div class="palette-section">
+  <img src="colorspalettelpm2.png" alt="Palette couleurs" class="palette-img">
+  <div class="palette-text">
+    <img src="laperlalogo18.png" alt="Logo LA PERLA" class="palette-logo">
+    <p class="archives-text">
+      Ci-dessus se dévoile la palette chromatique qui façonne l'identité de LA PERLA Magazine. 
+      Elle réunit des tonalités franches, délicates et affirmées, reflétant un style à la fois 
+      indomptable et profondément féminin.  dans toute sa simplicité élégante, symbole d'un univers où la sobriété rencontre le caractère.
+    </p>
+  </div>
+</div>
+
+
+
+
+
+    <!-- Moodboard après texte des images -->
+    <div class="moodboard-section">
+      <img src="moodboardlaperla2.png" alt="Moodboard LA PERLA" class="moodboard-img">
+      <p class="moodboard-text">
+        Ce moodboard plonge au cœur de l'esthétique de LA PERLA Magazine, où l'élégance rencontre l'énergie du rock. Il explore un style affirmé, contrasté et libre. Mes inspirations se nourrissent de Kate Moss, des années 1990, de l'atmosphère singulière de Paris et de New-York, ainsi que l'art du journaling, qui façonne mon regard et enrichit mon univers créatif.
+      </p>
+    </div>
+
+    <!-- Image Announcement -->
+    <div class="archives-container">
+      <div class="archive-item announcement-wrap">
+        <img src="announcementlaperlamag.png" alt="Annonce LA PERLA" class="archive-photo announcement-big">
+      </div>
+    </div>
+
+<div class="section-title">
+  <span>A la une</span>
+</div>
+
+   <div class="double-carousel-container">
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <img src="nouvellecoverlpm.png" class="carousel-img" alt="Photo 1">
+      <img src="3.png" class="carousel-img" alt="Photo 2">
+      <img src="4.png" class="carousel-img" alt="Photo 3">
+      <img src="5.png" class="carousel-img" alt="Photo 4">
+      <img src="5bis.png" class="carousel-img" alt="Photo 5">
+    </div>
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <img src="coverpart2.png" class="carousel-img" alt="Photo A">
+      <img src="suite1.png" class="carousel-img" alt="Photo B">
+      <img src="suite2.png" class="carousel-img" alt="Photo C">
+      <img src="suite3.png" class="carousel-img" alt="Photo D">
+      <img src="suite4bis.png" class="carousel-img" alt="Photo E">
+      <img src="suite5.png" class="carousel-img" alt="Photo F">
+      <img src="suite6.png" class="carousel-img" alt="Photo G">
+    </div>
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+</div>
+
+
+
+<script>
+document.querySelectorAll('.carousel-container').forEach(container => {
+  const track = container.querySelector('.carousel-track');
+  const prevBtn = container.querySelector('.prev');
+  const nextBtn = container.querySelector('.next');
+
+  let position = 0; // position actuelle du scroll
+
+  const imgWidth = track.querySelector('img').offsetWidth + 10; // largeur image + gap
+
+  nextBtn.addEventListener('click', () => {
+    const maxScroll = track.scrollWidth - container.offsetWidth;
+    position = Math.min(position + imgWidth, maxScroll);
+    track.style.transform = `translateX(-${position}px)`;
+  });
+
+  prevBtn.addEventListener('click', () => {
+    position = Math.max(position - imgWidth, 0);
+    track.style.transform = `translateX(-${position}px)`;
+  });
+});
+</script>
+
+
+
+
+  <footer>
+    <p>© 2025 Rose Marie Bin-Jean — Tous droits réservés</p>
+  </footer>
+
+</body>
+</html>
