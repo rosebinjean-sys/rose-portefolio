@@ -540,7 +540,7 @@ footer {
 
 /* Chaque bloc image */
 .image-item img {
-  width: 500px;       /* même taille que ton image de référence */
+  width: 700px;       /* même taille que ton image de référence */
   max-width: 100%;    /* responsive */
   height: auto;       /* garde les proportions */
   display: block;
